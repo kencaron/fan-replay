@@ -2,38 +2,3 @@
 @import '../bower_components/bootstrap-sass/lib/mixins';
 @import '../bower_components/bootstrap-sass/lib/modals';
 @import '../bower_components/bootstrap-sass/lib/carousel';
-
-body {
-  background-color: #EEE;
-}
-.masonry-brick {
-  display:none;
-  &.loaded {
-    display:block;
-    cursor: pointer;
-    border: 1px solid #333;
-    background-color:white;
-    margin:10px;
-    padding:10px;
-  }
-}
-
-.modal {
-  .close {
-    position: absolute;
-    top:10px;
-    right:10px;
-    size:20px;
-    color: red;
-    cursor: pointer;
-    z-index:100;
-  }
-}
-
-// Scale up the modal
-@media screen and (min-width: $screen-sm-min) {
-
-  .modal-dialog {
-    width: 682px;
-  }
-}

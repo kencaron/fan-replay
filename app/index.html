@@ -12,21 +12,53 @@
   <link rel="stylesheet" href="css/main.css" type="text/css" />
 </head>
 <body>
+  <script type="text/javascript">
+    var gp_slides = [
+      {
+        src: 'http://origincache-frc.fbcdn.net/10299721_1494089717486456_91775130_n.jpg'
+      },
+      {
+        src: 'http://origincache-prn.fbcdn.net/1168790_1434651513452026_2003341997_n.jpg'
+      },
+      {
+        src: 'http://origincache-ash.fbcdn.net/10358328_687208697984810_62498663_n.jpg'
+      },
+      {
+        src: 'http://origincache-frc.fbcdn.net/10296892_243159639207416_1503370301_n.jpg'
+      },
+      {
+        src: 'http://origincache-frc.fbcdn.net/10268755_1447594422147752_393282778_n.jpg'
+      },
+      {
+        src: 'http://origincache-frc.fbcdn.net/10311244_222018504674756_877736244_n.jpg'
+      },
+      {
+        src: 'http://origincache-frc.fbcdn.net/10362342_651947688210689_834029939_n.jpg'
+      },
+      {
+        src: 'http://origincache-ash.fbcdn.net/10375554_242382825885363_1403609769_n.jpg'
+      },
+      {
+        src: 'http://origincache-ash.fbcdn.net/10362120_699895203403326_1945571175_n.jpg'
+      },
+      {
+        src: 'http://origincache-prn.fbcdn.net/10326473_1422086174722637_2121230157_n.jpg'
+      },
+    ];
+  </script>
   <div ng-controller="MainCtrl" class="container">
-    <div masonry>
-        <div class="masonry-brick" ng-repeat="slide in main.slides" ng-click="main.openModal($index)">
-            <img ng-src="{{slide.src}}">
-        </div>
-    </div>
+    <carousel interval="-1">
+      <slide ng-repeat="slide in main.slides" active="slide.active">
+        <img ng-src="{{slide.src}}" style="margin:auto;">
+      </slide>
+    </carousel>
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
 
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
-  <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+  <script src="bower_components/imagesloaded/imagesloaded.js"></script>
 
   <script src="js/app.js"></script>
 </body>
