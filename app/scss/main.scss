@@ -29,3 +29,11 @@ body {
     z-index:100;
   }
 }
+
+// Scale up the modal
+@media screen and (min-width: $screen-sm-min) {
+
+  .modal-dialog {
+    width: 682px;
+  }
+}
