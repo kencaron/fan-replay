@@ -15,34 +15,44 @@
   <script type="text/javascript">
     var gp_slides = [
       {
-        src: 'http://origincache-frc.fbcdn.net/10299721_1494089717486456_91775130_n.jpg'
+        src: 'http://origincache-frc.fbcdn.net/10299721_1494089717486456_91775130_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, optio, dolor tempore reprehenderit mollitia excepturi velit alias voluptatem autem ipsa necessitatibus rem distinctio fugiat. Facilis incidunt corporis asperiores voluptatum vel!'
       },
       {
-        src: 'http://origincache-prn.fbcdn.net/1168790_1434651513452026_2003341997_n.jpg'
+        src: 'http://origincache-prn.fbcdn.net/1168790_1434651513452026_2003341997_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, a nihil quidem illo corrupti atque officiis totam enim? Quae, hic asperiores eius laborum voluptas magni itaque autem aspernatur aliquam error!'
       },
       {
-        src: 'http://origincache-ash.fbcdn.net/10358328_687208697984810_62498663_n.jpg'
+        src: 'http://origincache-ash.fbcdn.net/10358328_687208697984810_62498663_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum necessitatibus nobis alias obcaecati nam. Consequuntur, aperiam, laborum suscipit libero earum debitis quae adipisci molestias. Eaque, quod alias sunt porro architecto.'
       },
       {
-        src: 'http://origincache-frc.fbcdn.net/10296892_243159639207416_1503370301_n.jpg'
+        src: 'http://origincache-frc.fbcdn.net/10296892_243159639207416_1503370301_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sunt, eos, vero molestiae sit earum architecto sed id quae blanditiis cum aliquam perspiciatis provident nisi ducimus dolorem facere aliquid dolores!'
       },
       {
-        src: 'http://origincache-frc.fbcdn.net/10268755_1447594422147752_393282778_n.jpg'
+        src: 'http://origincache-frc.fbcdn.net/10268755_1447594422147752_393282778_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, veritatis tempora nisi pariatur repudiandae laborum doloribus praesentium quam eius ipsum quaerat at voluptas aperiam repellendus adipisci. Hic, voluptate dolorum omnis.'
       },
       {
-        src: 'http://origincache-frc.fbcdn.net/10311244_222018504674756_877736244_n.jpg'
+        src: 'http://origincache-frc.fbcdn.net/10311244_222018504674756_877736244_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, odit, ut, exercitationem, labore assumenda similique atque fugiat unde commodi earum beatae harum delectus minima. Suscipit, nostrum commodi minus quidem saepe.'
       },
       {
-        src: 'http://origincache-frc.fbcdn.net/10362342_651947688210689_834029939_n.jpg'
+        src: 'http://origincache-frc.fbcdn.net/10362342_651947688210689_834029939_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, impedit, id voluptate ducimus eum reiciendis placeat voluptatibus facere laborum deserunt nulla autem veritatis recusandae similique laboriosam illo at! Magni, maiores!'
       },
       {
-        src: 'http://origincache-ash.fbcdn.net/10375554_242382825885363_1403609769_n.jpg'
+        src: 'http://origincache-ash.fbcdn.net/10375554_242382825885363_1403609769_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sequi, neque, cumque dicta esse soluta voluptas officiis quae aut itaque eveniet optio doloremque est veniam necessitatibus eum beatae voluptates explicabo?'
       },
       {
-        src: 'http://origincache-ash.fbcdn.net/10362120_699895203403326_1945571175_n.jpg'
+        src: 'http://origincache-ash.fbcdn.net/10362120_699895203403326_1945571175_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate in doloremque vitae officia quidem expedita cum excepturi vero. Eaque, quis ratione ex ea officiis nobis unde corporis enim a sunt!'
       },
       {
-        src: 'http://origincache-prn.fbcdn.net/10326473_1422086174722637_2121230157_n.jpg'
+        src: 'http://origincache-prn.fbcdn.net/10326473_1422086174722637_2121230157_n.jpg',
+        caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, exercitationem, quibusdam, repellendus consequuntur eum corporis aliquid harum animi ut voluptatibus dignissimos numquam omnis neque. Earum, provident rem ut corrupti porro.'
       },
     ];
   </script>
@@ -50,6 +60,9 @@
     <carousel interval="-1">
       <slide ng-repeat="slide in main.slides" active="slide.active">
         <img ng-src="{{slide.src}}" style="margin:auto;">
+        <div class="sidebar">
+          <span class="caption" ng-bind="slide.caption"></span>
+        </div>
       </slide>
     </carousel>
   </div>

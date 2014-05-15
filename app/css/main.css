@@ -223,8 +223,65 @@
   display: none;
 }
 
-/* line 10, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
+.carousel {
+  width: 840px;
+  margin: auto;
+}
+
+/* line 14, ../scss/main.scss */
+.carousel-inner {
+  position: relative;
+}
+/* line 16, ../scss/main.scss */
 .carousel-inner img {
   background-color: black;
   height: 640px;
+  width: 640px;
+  display: inline-block;
+  float: left;
+}
+/* line 23, ../scss/main.scss */
+.carousel-inner .sidebar {
+  position: relative;
+  width: 180px;
+  float: right;
+  height: 620px;
+  padding: 10px;
+  background-color: #eee;
+  font-family: sans-serif;
+}
+/* line 26, ../scss/main.scss */
+.carousel-inner .sidebar .caption {
+  bottom: 10px;
+  position: absolute;
+  width: 180px;
+}
+
+/* line 42, ../scss/main.scss */
+.carousel-control {
+  cursor: pointer;
+  top: 50%;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+  border: 0;
+  font-size: 9px;
+  line-height: 32px;
+  color: #000;
+  background: #fff;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+/* line 58, ../scss/main.scss */
+.carousel-control.left {
+  left: 10px;
+  right: auto;
+}
+/* line 63, ../scss/main.scss */
+.carousel-control.right {
+  left: auto;
+  right: 210px;
 }

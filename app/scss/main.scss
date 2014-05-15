@@ -6,9 +6,62 @@
   display: none;
 }
 
+.carousel {
+  width:840px;
+  margin:auto;
+
+}
 .carousel-inner {
+  position: relative;
   img {
     background-color: black;
     height:640px;
+    width:640px;
+    display: inline-block;
+    float:left;
+  }
+  .sidebar {
+    position: relative;
+
+    .caption {
+      bottom:10px;
+      position: absolute;
+      width:180px;
+
+    }
+    width:180px;
+    float:right;
+    height: 620px;
+    padding:10px;
+    background-color: #eee;
+    font-family: sans-serif;
+  }
+
+}
+
+.carousel-control {
+  cursor: pointer;
+  top: 50%;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-top: -10px;
+  border: 0;
+  font-size: 9px;
+  line-height: 32px;
+  color: #000;
+  background: #fff;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+
+  &.left {
+    left: 10px;
+    right: auto;
+  }
+
+  &.right {
+    left: auto;
+    right: 210px;
   }
 }
