@@ -1,4 +1,14 @@
 @import '../bower_components/bootstrap-sass/lib/variables';
 @import '../bower_components/bootstrap-sass/lib/mixins';
-@import '../bower_components/bootstrap-sass/lib/modals';
 @import '../bower_components/bootstrap-sass/lib/carousel';
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-inner {
+  img {
+    background-color: black;
+    height:640px;
+  }
+}
