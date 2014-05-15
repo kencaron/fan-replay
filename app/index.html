@@ -15,7 +15,7 @@
   <script type="text/javascript">
     var gp_slides = [
       {
-        src: 'http://origincache-frc.fbcdn.net/10299721_1494089717486456_91775130_n.jpg',
+        src: 'some_bullshit_broken_link',
         caption: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, optio, dolor tempore reprehenderit mollitia excepturi velit alias voluptatem autem ipsa necessitatibus rem distinctio fugiat. Facilis incidunt corporis asperiores voluptatum vel!'
       },
       {
@@ -59,7 +59,7 @@
   <div ng-controller="MainCtrl" class="container">
     <carousel interval="-1">
       <slide ng-repeat="slide in main.slides" active="slide.active">
-        <img ng-src="{{slide.src}}" style="margin:auto;">
+        <img pending-indicator ng-src="{{slide.src}}" style="margin:auto;">
         <div class="sidebar">
           <span class="caption" ng-bind="slide.caption"></span>
         </div>
@@ -67,11 +67,11 @@
     </carousel>
   </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
 
   <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+  <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
 
   <script src="js/app.js"></script>
 </body>
